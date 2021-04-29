@@ -17,7 +17,7 @@ const COMMANDS = ['/start', '/newMeme', '/help']
 const token = process.env.TELEGRAM_API_TOKEN;
 
 if (process.env.NODE_ENV === 'production') {
-    let bot = new TelegramBot(token);
+    bot = new TelegramBot(token);
     bot.setWebHook(process.env.HEROKU_URL + bot.token);
 } else {
     bot = new TelegramBot(token, { polling: true });
