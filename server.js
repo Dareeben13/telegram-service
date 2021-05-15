@@ -73,12 +73,6 @@ app.listen(PORT, () => {
 })
 
 
-
-
-
-
-
-
 // app.post("/start_bot", function (req, res) {
 //     console.log(req.body)
 //     const { message } = req.body.message;
